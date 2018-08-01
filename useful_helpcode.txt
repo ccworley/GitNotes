@@ -5,6 +5,14 @@ First do a
 >git status
 to see if anything odd is happening.
 
+> to ensure remote version is most up-to-date use
+git pull origin master
+where origin is the remote master version, and master is the web master version.
+
+> make changes to origin - this is your master by the way.
+If you don’t want to change your local version then checkout another local version to work on.
+
+
 Then
 
 if https: doesn’t work after a password change force it to let you enter your password with
