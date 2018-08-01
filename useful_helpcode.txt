@@ -1,0 +1,14 @@
+github tips
+
+
+First do a 
+>git status
+to see if anything odd is happening.
+
+Then
+
+if https: doesn’t work after a password change force it to let you enter your password with
+
+git push -u origin master
+
+
