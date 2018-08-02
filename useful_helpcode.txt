@@ -12,11 +12,34 @@ where origin is the remote master version, and master is the web master version.
 > make changes to origin - this is your master by the way.
 If you don’t want to change your local version then checkout another local version to work on.
 
+Use 
+>git add filename 
+or 
+>git add * 
+to capture any changes after a session.
 
-Then
+Use
+>git rm filename
+ to remove from filesystem and github but it will be inthe github history
+ 
+To put a folder in the github create the folder and put a file in it, or github won't track it.
+Also it won't track symlinks so needs to be the original folder.
+Then use
+>git add Folder/*
 
-if https: doesn’t work after a password change force it to let you enter your password with
+Then use 
+>git commit -m "comment" 
+to commit the changes
+Then use 
+>git push origin master 
+to push the changes to the master on github.
 
+The error 403 is to do with using HTTPS on a server system.
+Use ssh instead but you need to add the public rsa key. Follow these instructions:
+https://help.github.com/articles/connecting-to-github-with-ssh/
+
+If you change your github password for HTTPS you need to force it to let you enter the new password.
+You can do this when doing a push using the -u argument:
 git push -u origin master
 
 
